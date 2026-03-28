@@ -1,0 +1,10 @@
+ultralytics==8.4.30
+roboflow
+supervision
+opencv-python
+Pillow
+matplotlib
+numpy
+PyYAML
+torch
+torchvision
