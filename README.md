@@ -94,6 +94,38 @@ construction-safety-monitor/
 ```
 
 ---
+##  Innovation Beyond Baseline
+
+This system goes beyond a simple safe/unsafe classifier in several ways:
+
+### Confidence Scoring
+Every violation includes a confidence score (0.0–1.0) rather than
+just a binary flag. This surfaces model uncertainty so operators
+can prioritise high-confidence alerts over borderline detections.
+
+### Human-Readable Violation Reports
+Each inference run produces a structured compliance report showing
+exactly which PPE item is missing per worker — not just a scene-level
+flag. Example output:
+```
+SAFETY COMPLIANCE REPORT
+Verdict   : 🚨 UNSAFE
+Violations: 2
+  ⚠️  NO-Hardhat        (conf: 0.82)
+  ⚠️  NO-Safety Vest    (conf: 0.91)
+Compliant : 1
+  ✅  Hardhat            (conf: 0.93)
+```
+
+### Batch Inference with Summary Stats
+The `batch_check()` function processes entire folders of images
+and returns a violation rate — useful for site-wide audits,
+not just single-frame checks.
+
+### Edge Case Handling
+Documented failure modes for partial occlusion, distance, and
+low-light scenes — with confidence threshold tuning to reduce
+false positives in ambiguous cases.
 
 ##  Known Limitations
 
