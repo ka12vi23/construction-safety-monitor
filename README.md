@@ -1,4 +1,4 @@
-# 🦺 Construction Safety Monitor
+# Construction Safety Monitor
 
 An AI-powered computer vision system that automatically monitors construction sites 
 and determines in real-time whether a situation is **safe or unsafe**.
@@ -7,7 +7,7 @@ Built for the Newnop Associate AI/ML Engineer assignment.
 
 ---
 
-## 🎯 What It Does
+##  What It Does
 
 - Detects workers in a scene regardless of distance or pose
 - Recognises PPE: hard hats, safety vests, masks
@@ -16,7 +16,7 @@ Built for the Newnop Associate AI/ML Engineer assignment.
 
 ---
 
-## 📊 Model Performance
+##  Model Performance
 
 | Class | mAP50 |
 |---|---|
@@ -31,7 +31,7 @@ Trained on YOLOv8s — 50 epochs — Tesla T4 GPU — 0.46 hours
 
 ---
 
-## 🚨 Safety Rules Defined
+##  Safety Rules Defined
 
 | Rule | Violation |
 |---|---|
@@ -41,7 +41,7 @@ Trained on YOLOv8s — 50 epochs — Tesla T4 GPU — 0.46 hours
 
 ---
 
-## 📁 Dataset
+##  Dataset
 
 - **Base:** Construction Site Safety dataset (Roboflow Universe)
 - **Extended:** Custom additional images added manually
@@ -52,7 +52,7 @@ Trained on YOLOv8s — 50 epochs — Tesla T4 GPU — 0.46 hours
 
 ---
 
-## 🛠️ Setup & Run
+##  Setup & Run
 
 ### Prerequisites
 ```bash
@@ -78,7 +78,7 @@ notebooks/Construction_Safety_Monitor.ipynb
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 ```
 construction-safety-monitor/
 ├── README.md
@@ -95,7 +95,7 @@ construction-safety-monitor/
 
 ---
 
-## ⚠️ Known Limitations
+##  Known Limitations
 
 - Model struggles with distant or partially occluded workers
 - NO-Hardhat detection weaker than Hardhat (mAP 0.548)
@@ -104,7 +104,7 @@ construction-safety-monitor/
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - **Model:** YOLOv8s (Ultralytics)
 - **Training:** Google Colab T4 GPU
