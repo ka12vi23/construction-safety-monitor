@@ -1,7 +1,4 @@
-"""
-Construction Safety Monitor — Compliance Checker
-Core module for PPE compliance logic.
-"""
+
 
 from ultralytics import YOLO
 import cv2
